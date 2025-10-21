@@ -1,0 +1,14 @@
+.banner {
+    margin-top: 4.375rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    text-align: center;
+    background: linear-gradient(120deg, #f8fafc 0%, #e9f2ff 50%);
+    padding: 2rem;
+}
+
+.banner-content {
+    
+}
