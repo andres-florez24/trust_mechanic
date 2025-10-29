@@ -1,14 +1,139 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html {
-    font-family: var(--font-sans);
-    background-color: var(--bg);
+  font-family: var(--font-sans);
+  background-color: var(--bg);
 }
 
 body {
-    min-height: 500vh;
+  min-height: 150vh;
+}
+
+.chatbot {
+  position: fixed;
+  display: flex;
+  left: 90%;
+  bottom: 0%;
+  animation: parpadeo 2s ease-in-out 2s 1 normal;
+}
+
+.chatbot img {
+  width: 100px;
+
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  z-index: 1111;
+  color: #fff;
+  background-color: #33333300;
+  left: -50%;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: max-content;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 6px 10px;
+  border-radius: 4px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  /* arriba del elemento */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.cuadro {
+  height: auto;
+  max-width: 800px;
+  margin: 20px auto 50px auto; 
+}
+
+.h2 {
+  text-align: center;
+  color: #222;
+  font-size: 2em;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.493);
+  margin-top: 50px;
+}
+
+.cuadro img {
+  display: block;
+  margin: 0 auto;
+  width: 60rem;
+  height: auto;
+  border: 5px solid black;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.456);
+}
+
+pre {
+  background-color: #1e1e1e;
+  color: #00ff88;
+  padding: 15px;
+  border-radius: 10px;
+  font-family: "Consolas", monospace;
+  overflow-x: auto;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+
+@keyframes parpadeo {
+
+  0%,
+  100% {
+    transform: translateX(0)
+  }
+
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateX(-10px)
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: translateX(10px)
+  }
+
+  80% {
+    transform: translateX(8px)
+  }
+
+  90% {
+    transform: translateX(-8px)
+  }
+}
+
+@media (max-width: 1024px) {
+  .cuadro img {
+    width: 120%;
+  }
 }
