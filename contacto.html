@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="src/styles/button.css">
     <link rel="stylesheet" href="src/styles/banner.css">
     <link rel="stylesheet" href="src/styles/card.css">
+    <link rel="stylesheet" href="src/styles/form.css">
     <link rel="stylesheet" href="src/styles/navigation.css">
     <link rel="stylesheet" href="src/styles/footer.css">
-    <title>Inicio</title>
+    <title>Usuarios</title>
 </head>
 
 <body>
@@ -65,45 +66,34 @@
         <div class="chatbot">
             <img src="src/img/chatbot.png" alt="chatbot">
             <div class="tooltip">
-                
+
                 <span class="tooltip-text">¿Puedo ayudarte con algo?</span>
             </div>
         </div>
+
         <div class="intro">
-            <h2>¿Quienes somos?</h2>
-            <hr>
-            <p>TrustedMechanic es una plataforma digital que conecta talleres mecánicos con clientes en busca de
-                servicios confiables.
-                Aquí, los negocios pueden exhibir sus especialidades como reparación, lavado, pintura y venta de
-                repuestos. Además, ofrecemos herramientas y servicios para impulsar el crecimiento de cada taller,
-                ayudándolos a destacar en el mundo digital.
-            </p>
+            <h2>Contactanos</h2>
+            <form>
+                <label for="pqr">¿Qué tipo de peticion desea realizar?</label>
+                <select class="menuOpciones" name="opciones" id="pqr">
+                    <option value="Felicitacion">Felicitacion</option>
+                    <option value="peticion">Petición</option>
+                    <option value="Queja">Queja</option>
+                    <option value="Reclamo">Reclamo</option>
+                </select>
+                <button class="botonEnviar" type="submit">Hacer solicitud </button>
+            </form>
         </div>
-        <div class="contenedor">
-            <div class="card1">
-                <h2>Servicios de taller</h2>
-                <img src="src/img/servicios.jpg" alt="servicios">
-                <p>
-                    Gestión integral de servicios para talleres automotrices con seguimiento en tiempo real y
-                    comunicación con el cliente.
-                </p>
-            </div>
-            <div class="card1">
-                <h2>Inventario de piezas</h2>
-                <img src="src/img/inventario.jpg" alt="inventario">
-                <p>
-                    Sistema avanzado de gestión de inventario para autopartes con reordenamiento automatizado e
-                    integración de proveedores.
-                </p>
-            </div>
-            <div class="card1">
-                <h2>Panel de análisis</h2>
-                <img src="src/img/panel.jpg" alt="panel">
-                <p>
-                    Herramientas detalladas de análisis e informes para realizar seguimiento de su negocio.
-                </p>
-            </div>
+
+
+
+        <div class="intro">
+            <h2 class="solicitud">Describa su solicitud:</h2>
+            <label for="mensaje"></label>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50"
+                placeholder="Escriba aquí su mensaje..."></textarea>
         </div>
+
     </main>
 
     <footer>
@@ -125,7 +115,6 @@
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>

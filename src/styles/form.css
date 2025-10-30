@@ -1,0 +1,72 @@
+label {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+ 
+
+}
+
+.flexboxP{
+    display: flex;
+    padding: 5px;
+   
+}
+
+.flexbox {
+    flex: 12;
+    padding: 5px;
+    
+}
+
+.menuOpciones {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #007BFF;
+  border-radius: 8px;
+  background-color: #f0f8ff; 
+  color: #333;
+  appearance: none; 
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menuOpciones:hover {
+  border-color: #0056b3;
+  background-color: #e6f0ff;
+}
+
+#mensaje {
+    width: 75%;
+    margin: 15px auto;
+    height: 250px;
+    border: 2px solid #007BFF;
+    
+}
+
+.solicitud h2{
+    font-weight: bold;
+    font-size: large;
+}
+
+#mensaje:hover {
+    border: 2px dashed #007BFF;
+}
+
+@media (max-width: 600px) {
+    .contenedor {
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .card1 h2 {
+        font-size: 1.3rem;
+    }
+
+    .card1 p {
+        font-size: 0.95rem;
+    }
+}
