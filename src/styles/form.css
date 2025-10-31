@@ -1,42 +1,38 @@
 label {
-  font-size: 16px;
-  color: #333;
-  font-weight: bold;
-  display: block;
-  margin-bottom: 5px;
- 
-
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
 }
 
-.flexboxP{
+.flexboxP {
     display: flex;
     padding: 5px;
-   
 }
 
 .flexbox {
     flex: 12;
     padding: 5px;
-    
 }
 
 .menuOpciones {
-  width: 100%;
-  padding: 10px;
-  font-size: 1rem;
-  border: 2px solid #007BFF;
-  border-radius: 8px;
-  background-color: #f0f8ff; 
-  color: #333;
-  appearance: none; 
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #007BFF;
+    border-radius: 8px;
+    background-color: #f0f8ff;
+    color: #333;
+    appearance: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .menuOpciones:hover {
-  border-color: #0056b3;
-  background-color: #e6f0ff;
+    border-color: #0056b3;
+    background-color: #e6f0ff;
 }
 
 #mensaje {
@@ -44,10 +40,9 @@ label {
     margin: 15px auto;
     height: 250px;
     border: 2px solid #007BFF;
-    
 }
 
-.solicitud h2{
+.solicitud h2 {
     font-weight: bold;
     font-size: large;
 }

@@ -10,9 +10,13 @@ html {
 }
 
 body {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
+pre {
+  max-width: 80%;
+  margin: 1.25rem auto;
+}
 .chatbot {
   position: fixed;
   display: flex;
@@ -25,7 +29,6 @@ body {
   width: 100px;
 
 }
-
 
 .tooltip {
   position: relative;
@@ -62,11 +65,10 @@ body {
   opacity: 1;
 }
 
-
 .cuadro {
   height: auto;
   max-width: 800px;
-  margin: 20px auto 50px auto; 
+  margin: 20px auto 50px auto;
 }
 
 .h2 {
@@ -102,12 +104,11 @@ pre {
   margin-bottom: 50px;
 }
 
-.flexboxP p{
- display: block;
- padding: 10px;
+.flexboxP p {
+  display: block;
+  padding: 10px;
   margin: 5px 0;
 }
-
 
 @keyframes parpadeo {
 
@@ -136,16 +137,16 @@ pre {
   90% {
     transform: translateX(-8px)
   }
-
+}
 
   @media (max-width: 1024px) {
-  .pre{
-    width: 120%;
+    .pre {
+      width: 120%;
+    }
   }
-}
 
-@media (max-width: 1024px) {
-  .cuadro img {
-    width: 120%;
+  @media (max-width: 1024px) {
+    .cuadro img {
+      width: 120%;
+    }
   }
-}

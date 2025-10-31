@@ -23,21 +23,16 @@
 }
 
 hr {
-  border: none;
-  height: 4px;
-  background: linear-gradient(
-    to right,
-    #222,
-    #999 10%,
-    #fff 50%,
-    #999 90%,
-    #222
-  );
-  border-radius: 2px;
+    border: none;
+    height: 4px;
+    background: linear-gradient(to right,
+            #222,
+            #999 10%,
+            #fff 50%,
+            #999 90%,
+            #222);
+    border-radius: 2px;
 }
-
-
-
 
 .card1 {
     background-color: var(--bg);
@@ -51,20 +46,17 @@ hr {
     justify-content: space-between;
 }
 
-
 .card1 h2 {
     font-size: 1.5rem;
     color: black;
     margin-bottom: 15px;
 }
 
-
 .card1 p {
     font-size: 1rem;
     color: var(--text);
     line-height: 1.6;
 }
-
 
 .card1 img {
     width: 100%;
@@ -74,8 +66,8 @@ hr {
     margin-bottom: 15px;
 }
 
-
-.card1:hover, .intro:hover {
+.card1:hover,
+.intro:hover {
     transform: translateY(-8px);
     box-shadow: 0 8px 20px var(--color-shadow);
 }
@@ -83,7 +75,7 @@ hr {
 .card1 img.profile {
     width: 150px;
     height: 150px;
-    margin: 50px auto; 
+    margin: 50px auto;
     object-fit: cover;
 }
 

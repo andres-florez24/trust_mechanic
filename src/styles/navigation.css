@@ -68,7 +68,6 @@
   animation: fadeInText 1.2s ease-out forwards;
 }
 
-
 .nav-menu {
   display: flex;
   list-style: none;
@@ -156,5 +155,4 @@
   .menu-toggle:checked+.menu-icon+.nav-menu {
     display: flex;
   }
-
 }

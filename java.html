@@ -51,7 +51,6 @@
                 <p>Revisión técnica y mecánica profesional</p>
             </div>
         </div>
-
         <div class="banner-item">
             <img src="src/img/banner2.jpg" alt="Taller especializado">
             <div class="banner-text">
@@ -60,120 +59,110 @@
             </div>
         </div>
     </section>
-
-
-    <h2 class="h2">DON CODIGO (JAVA)</h2>
-    <pre>
+    <main>
+        <h2 class="h2">DON CODIGO (JAVA)</h2>
+        <pre>
         <code>
             import java.util.Locale;
-import java.util.Scanner;
+            import java.util.Scanner;
 
-    public class RegistroDeCompras1 {
-     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        sc.useLocale(Locale.US);
+            public class RegistroDeCompras1 {
+                public static void main(String[] args) {
+                    Scanner sc=new Scanner(System.in);
+                    sc.useLocale(Locale.US);
 
+                    int cantidadVentas = 0;
+                    double totalVentas = 0;
+                    double promedio = 0;
+                    int contadorMayoresAlPromedio =0;
+                    double ventaMasAlta=0.0;
+                    double ventaMasBaja=0.0;
 
+                    while (true) {
+                        try {
+                            System.out.print("Ingrese cantidad total de productos vendidos en el día: ");
+                            cantidadVentas = sc.nextInt();
+                            if (cantidadVentas < 0) {
+                                System.out.println("La cantidad no puede ser negativa. Intenta de nuevo.");
+                                continue;
+                            }
+                            break;
+                        } catch (Exception e) {
+                            System.out.println("Dato inválido. Por favor ingresa un número entero.");
+                            sc.nextLine();
+                        }
+                    }
 
+                    if (cantidadVentas == 0) {
+                        System.out.println("No se realizaron ventas hoy ");
+                        return;
+                    }
 
-        int cantidadVentas = 0;
-        double totalVentas = 0;
-        double promedio = 0;
-        int contadorMayoresAlPromedio =0;
-        double ventaMasAlta=0.0;
-        double ventaMasBaja=0.0;
+                    double[] valoresVentas = new double[cantidadVentas];
 
-         while (true) {
-             try {
-                 System.out.print("Ingrese cantidad total de productos vendidos en el día: ");
-                 cantidadVentas = sc.nextInt();
-                 if (cantidadVentas < 0) {
-                     System.out.println("La cantidad no puede ser negativa. Intenta de nuevo.");
-                     continue;
-                 }
-                 break;
-             } catch (Exception e) {
-                 System.out.println("Dato inválido. Por favor ingresa un número entero.");
-                 sc.nextLine();
-             }
-         }
+                    for (int i = 0; i < cantidadVentas; i++) {
+                        while (true) {
+                            try {
+                                System.out.print("Ingresa valor de la venta " + (i + 1) + ": ");
+                                valoresVentas[i] = sc.nextDouble();
+                                if (valoresVentas[i] < 0) {
+                                    System.out.println("El valor no puede ser negativo. Intenta de nuevo.");
+                                    continue;
+                                }
+                                break;
+                            } catch (Exception e) {
+                                System.out.println("Dato inválido. Por favor ingresa un número decimal.");
+                                sc.nextLine(); 
+                            }
+                        }
+                        totalVentas += valoresVentas[i];
+                    }
 
-         if (cantidadVentas == 0) {
-             System.out.println("No se realizaron ventas hoy ");
-             return;
-         }
+                        promedio = totalVentas / cantidadVentas ;
 
-         double[] valoresVentas = new double[cantidadVentas];
+                        ventaMasAlta = valoresVentas[0];
+                        ventaMasBaja = valoresVentas[0];
 
-         for (int i = 0; i < cantidadVentas; i++) {
-             while (true) {
-                 try {
-                     System.out.print("Ingresa valor de la venta " + (i + 1) + ": ");
-                     valoresVentas[i] = sc.nextDouble();
-                     if (valoresVentas[i] < 0) {
-                         System.out.println("El valor no puede ser negativo. Intenta de nuevo.");
-                        continue;
-                     }
-                     break;
-                 } catch (Exception e) {
-                     System.out.println("Dato inválido. Por favor ingresa un número decimal.");
-                     sc.nextLine(); 
-                 }
-             }
-             totalVentas += valoresVentas[i];
-         }
+                        for (int i = 0; i < valoresVentas.length ; i++) {
 
-            promedio = totalVentas / cantidadVentas ;
+                            if (valoresVentas[i] > ventaMasAlta) {
+                                ventaMasAlta = valoresVentas[i];
+                            }
 
-              ventaMasAlta = valoresVentas[0];
-             ventaMasBaja = valoresVentas[0];
+                            if (valoresVentas[i] < ventaMasBaja) {
+                                ventaMasBaja = valoresVentas[i];
+                            }
 
+                            if (valoresVentas[i] > promedio) {
+                                contadorMayoresAlPromedio++;
 
-            for (int i = 0; i < valoresVentas.length ; i++) {
+                            }
+                        }
 
-                if (valoresVentas[i] > ventaMasAlta) {
-                    ventaMasAlta = valoresVentas[i];
+                    System.out.println("----------------------------------------");
+
+                    System.out.println( "total ventas es " + totalVentas);
+                    System.out.println("----------------------------------------");
+
+                    System.out.println("el promedio de ventas es " + promedio);
+                    System.out.println("----------------------------------------");
+
+                    System.out.println("Venta Más Alta: " + ventaMasAlta);
+                    System.out.println("----------------------------------------");
+
+                    System.out.println("Venta Más Baja: " + ventaMasBaja);
+                    System.out.println("----------------------------------------");
+
+                    System.out.println("Ventas mayores al Promedio: " + contadorMayoresAlPromedio);
+                    System.out.println("----------------------------------------");
+
                 }
-
-                if (valoresVentas[i] < ventaMasBaja) {
-                    ventaMasBaja = valoresVentas[i];
-                }
-
-                if (valoresVentas[i] > promedio) {
-                    contadorMayoresAlPromedio++;
-
-                }
-
             }
-
-
-
-
-        System.out.println("----------------------------------------");
-
-        System.out.println( "total ventas es " + totalVentas);
-        System.out.println("----------------------------------------");
-
-        System.out.println("el promedio de ventas es " + promedio);
-        System.out.println("----------------------------------------");
-
-        System.out.println("Venta Más Alta: " + ventaMasAlta);
-        System.out.println("----------------------------------------");
-
-        System.out.println("Venta Más Baja: " + ventaMasBaja);
-        System.out.println("----------------------------------------");
-
-        System.out.println("Ventas mayores al Promedio: " + contadorMayoresAlPromedio);
-        System.out.println("----------------------------------------");
-
-    }
-}
-
         </code>
      </pre>
+    </main>
 
-     
-     <footer>
+    <footer>
         <div class="footer">
             <p>Todos los derechos reservados &copy; 2025 <u>TrustMechanic</u></p>
             <div class="social-icons">
