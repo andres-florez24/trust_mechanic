@@ -1,0 +1,160 @@
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar {
+  background: var(--color-nav);
+  backdrop-filter: blur(15px);
+  padding: 0.5rem 0;
+  position: fixed;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  max-height: 10vh;
+  z-index: 1000;
+  box-shadow: 0 8px 32px var(--color-shadow);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  gap: 5rem;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo img {
+  width: 3.5rem;
+  height: auto;
+  position: relative;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0;
+  line-height: 1;
+  transform: translateY(-10px);
+  animation: fadeInText 1.2s ease-out forwards;
+}
+
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: var(--button-text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ffffff;
+  background: var(--bg-button);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px var(--color-shadow);
+}
+
+.nav-item-dropdown {
+  position: relative;
+}
+
+.user-adm {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--color-nav);
+  list-style: none;
+  padding: 0.5rem 0;
+  margin: 0;
+  display: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  z-index: 1001;
+}
+
+.user-adm li {
+  padding: 0.5rem 1rem;
+}
+
+.user-adm li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.nav-item-dropdown:hover .user-adm {
+  display: block;
+}
+
+@keyframes fadeInText {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1024px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    background: #4a91e2ba;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    z-index: 999;
+  }
+
+  .menu-toggle:checked+.menu-icon+.nav-menu {
+    display: flex;
+  }
+
+}

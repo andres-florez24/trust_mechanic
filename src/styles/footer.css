@@ -1,0 +1,25 @@
+.footer {
+    display: grid;
+    background-color: var(--color-primary);
+    color: #fff;
+    gap: 5px;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.social-icons img {
+    height: 35px;
+    margin-top: 5px;
+}
+
+.social-icons img:hover {
+    transform: scale(1.5);
+}

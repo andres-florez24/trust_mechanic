@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/variables.css">
+    <link rel="stylesheet" href="src/styles/button.css">
+    <link rel="stylesheet" href="src/styles/banner.css">
+    <link rel="stylesheet" href="src/styles/card.css">
+    <link rel="stylesheet" href="src/styles/form.css">
+    <link rel="stylesheet" href="src/styles/navigation.css">
+    <link rel="stylesheet" href="src/styles/footer.css">
+    <title>Usuarios</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-left">
+                    <div class="logo">
+                        <img src="src/img/trustLog.png" alt="ourLogo">
+                        <span class="logo-text">TrustMechanic</span>
+                    </div>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="#" class="nav-link">Servicios</a></li>
+                    <li><a href="#" class="nav-link">Productos</a></li>
+                    <li><a href="usuarios.html" class="nav-link">Usuarios</a></li>
+                    <li><a href="model.html" class="nav-link">Modelo</a></li>
+                    <li><a href="java.html" class="nav-link">Java</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contáctanos</a></li>
+                    <li><a href="equipo.html" class="nav-link">Equipo</a></li>
+
+                </ul>
+
+                <div class="nav-right">
+                    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+                    <ul class="nav-menu">
+                        <li><a href="index.html" class="nav-link">Inicio</a></li>
+                        <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                        <li><a href="productos.html" class="nav-link">Productos</a></li>
+                        <li><a href="usuarios.html" class="nav-link">Usuarios</a></li>
+                        <li><a href="model.html" class="nav-link">Modelo</a></li>
+                        <li><a href="java.html" class="nav-link">Java</a></li>
+                        <li><a href="contacto.html" class="nav-link">Contáctanos</a></li>
+                        <li><a href="equipo.html" class="nav-link">Equipo</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <div class="banner-item">
+            <img src="src/img/banner.jpg" alt="Mecánico trabajando">
+            <div class="banner-text">
+                <h2>Servicio confiable</h2>
+                <p>Revisión técnica y mecánica profesional</p>
+            </div>
+        </div>
+
+        <div class="banner-item">
+            <img src="src/img/banner2.jpg" alt="Taller especializado">
+            <div class="banner-text">
+                <h2>Atención personalizada</h2>
+                <p>Tu vehículo en manos expertas</p>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <div class="chatbot">
+            <img src="src/img/chatbot.png" alt="chatbot">
+            <div class="tooltip">
+
+                <span class="tooltip-text">¿Puedo ayudarte con algo?</span>
+            </div>
+        </div>
+        <div class="tabla">
+            <div class="intro">
+                <h2>crea tu usuarios</h2>
+                <form>
+                    <label for="opciones">que tipo de usuario deseas crear</label>
+                    <select class="botonOpciones" name="opciones" id="opciones">
+                        <option value="opciones1">administrador</option>
+                        <option value="opciones2">usuarios</option>
+                        <option value="opciones2">mecanico</option>
+                    </select>
+                    <button class="botonCrear" type="submit">crear </button>
+
+                </form>
+
+            </div>
+        </div>
+
+        <div class="tabla">
+            <div class="intro">
+                <h2>ingrese los datos</h2>
+                <form>
+                    <label for="fname">nombre completo:</label>
+                    <input type="text" id="fname" name="fname" placeholder="nombres y apellidos"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="email"><br><br>
+                    <label for="fname">telefono:</label>
+                    <input type="text" id="fname" name="fname" placeholder="telefono"><br><br>
+                    <button class="botonCrear" type="submit">guardar</button>
+                </form>
+            </div>
+
+        </div>
+
+       
+
+            <div class="tabla">
+                <div class="intro">
+                    <div class="flexboxP">
+                        <p>#1</p>
+                        <p>andres florez palacio</p>
+                        <p>andres.f.palacio@correo.com</p>
+                        <p>321856987</p>
+                        <p>administrador</p>
+
+                        <select class="botonOpciones2" 
+                            <option value="opciones1">editar</option>
+                            <option value="opciones2">eliminar</option>
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+             <div class="tabla">
+                <div class="intro">
+                    <div class="flexboxP">
+                        <p>#2</p>
+                        <p>juan fulanito</p>
+                        <p>j.funalito@correo.com</p>
+                        <p>3288569254</p>
+                        <p>usuario</p>
+
+                        <select class="botonOpciones2">
+                            <option value="opciones1">editar</option>
+                            <option value="opciones2">eliminar</option>
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+             <div class="tabla">
+                <div class="intro">
+                    <div class="flexboxP">
+                        <p>#3</p>
+                        <p>carloas sanchez</p>
+                        <p>calsanchez23@correo.com</p>
+                        <p>3242358795</p>
+                        <p>mecanico</p>
+
+                        <select class="botonOpciones2" >
+                            <option value="opciones1">editar</option>
+                            <option value="opciones2">eliminar</option>
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+             <div class="tabla">
+                <div class="intro">
+                    <div class="flexboxP">
+                        <p>#4</p>
+                        <p>carolina velez</p>
+                        <p>carovelzh@correo.com</p>
+                        <p>324546985</p>
+                        <p>vendedora</p>
+
+                        <select class="botonOpciones2" >
+                            <option value="opciones1">editar</option>
+                            <option value="opciones2">eliminar</option>
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+
+            
+
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <p>Todos los derechos reservados &copy; 2025 <u>TrustMechanic</u></p>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="src/img/facebook.png" alt="facebook">
+                </a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                    <img src="src/img/twitter.png" alt="twitter">
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="src/img/instagram.png" alt="instagram">
+                </a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <img src="src/img/linkedin.png" alt="linkedin">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

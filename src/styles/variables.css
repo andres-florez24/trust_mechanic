@@ -1,0 +1,13 @@
+:root{
+  --color-primary: #3498db;
+  --color-nav: #4a90e2;
+  --bg: #f0f8ff;
+  --bg-button: #2ecc71;
+  --text: #2d3748;
+  --button-text: #ffffff;
+  --container-max: 1100px;
+  --radius: 6px;
+  --gap: 1rem;
+  --font-sans: 'Poppins', sans-serif;
+  --color-shadow: rgba(74, 144, 226, 0.3);
+}
