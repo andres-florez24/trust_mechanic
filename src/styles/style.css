@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  min-height: 150vh;
+    min-height: 100vh;
 }
 
 .chatbot {
@@ -102,6 +102,12 @@ pre {
   margin-bottom: 50px;
 }
 
+.flexboxP p{
+ display: block;
+ padding: 10px;
+  margin: 5px 0;
+}
+
 
 @keyframes parpadeo {
 
@@ -129,6 +135,12 @@ pre {
 
   90% {
     transform: translateX(-8px)
+  }
+
+
+  @media (max-width: 1024px) {
+  .pre{
+    width: 120%;
   }
 }
 

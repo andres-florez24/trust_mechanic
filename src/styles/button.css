@@ -7,7 +7,7 @@
     border-radius: 10px;
     cursor: pointer;
      margin-top: 10px;
-      box-shadow:5px 5px 5px 5px rgba(0, 0, 0, 0.608) ;
+      box-shadow:5px 5px 5px 5px rgba(0, 0, 0, 0.427) ;
 
 }
 
@@ -20,24 +20,26 @@
     border-radius: 10px;
     cursor: pointer;
     margin-top: 10px;
-    box-shadow:5px 5px 5px 5px rgba(37, 34, 34, 0.345) ;
+    box-shadow:5px 5px 5px 5px rgba(37, 34, 34, 0.2) ;
 }
+
+.botonOpciones2{
+    width: 100px;
+    padding: 10px;
+    background: #ecf1f4;
+    color: rgba(26, 2, 2, 0.952);
+     border-radius: 10px;
+    cursor: pointer;
+    margin-top:45px;
+    box-shadow:5px 5px 5px 5px rgba(37, 34, 34, 0.19) ;
+
+}
+
+
 
 .botonCrear:hover {
     background: #f3f5f7;
 
-}
-
-.botonOpciones2 {
-    width: 35px;
-    padding: 10px;
-    background: #ecf1f4;
-    color: rgb(26, 2, 2);
-    font-size: 16px;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-top: 10px;
-    box-shadow:5px 5px 5px 5px rgba(37, 34, 34, 0.393) ;
 }
 
 .botonEnviar {
