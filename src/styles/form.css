@@ -8,10 +8,13 @@ label {
 
 .flexboxP {
     display: flex;
-    padding: 5px;
-    flex-direction: column;
-    gap: 5px;
     align-items: center;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.flexboxP .botonOpciones2 {
+    margin-top: 0;
 }
 
 .flexbox {
@@ -68,12 +71,17 @@ label {
         font-size: 0.95rem;
     }
 
-    
-.flexboxP p {
-    padding: 2px;
-}
+    .flexboxP {
+        align-items: center;
+        flex-direction: column;
+    }
 
-.flexboxP .botonOpciones2 {
-    margin-top: 10px;
-}
+    .flexboxP p {
+        padding: 2px;
+    }
+
+    .flexboxP .botonOpciones2 {
+
+        margin-top: 10px;
+    }
 }
