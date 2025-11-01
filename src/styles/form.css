@@ -9,6 +9,9 @@ label {
 .flexboxP {
     display: flex;
     padding: 5px;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
 }
 
 .flexbox {
@@ -64,4 +67,13 @@ label {
     .card1 p {
         font-size: 0.95rem;
     }
+
+    
+.flexboxP p {
+    padding: 2px;
+}
+
+.flexboxP .botonOpciones2 {
+    margin-top: 10px;
+}
 }
