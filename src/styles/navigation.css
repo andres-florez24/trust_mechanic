@@ -51,7 +51,7 @@
 }
 
 .logo img {
-  width: 3.5rem;
+  width: 6rem;
   height: auto;
   position: relative;
 }
@@ -155,4 +155,9 @@
   .menu-toggle:checked+.menu-icon+.nav-menu {
     display: flex;
   }
+  
+  .logo img{
+    width: 3.5rem;
+  }
+
 }

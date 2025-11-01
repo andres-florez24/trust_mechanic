@@ -143,10 +143,14 @@ pre {
     .pre {
       width: 120%;
     }
-  }
 
-  @media (max-width: 1024px) {
     .cuadro img {
       width: 120%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .cuadro img {
+      width: 80%;
     }
   }
