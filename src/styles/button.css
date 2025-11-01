@@ -1,101 +1,118 @@
 .botonCrear {
-    width: 50%;
-    padding: 12px;
-    background: var(--color-primary);
-    color: rgb(26, 2, 2);
-    font-size: 16px;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-top: 10px;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.427);
-
+  width: 50%;
+  padding: 12px;
+  background: var(--color-primary);
+  color: rgb(26, 2, 2);
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.427);
 }
 
 .botonOpciones {
-    width: 50%;
-    padding: 5px;
-    background: #ecf1f4;
-    color: rgb(26, 2, 2);
-    font-size: 16px;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-top: 10px;
-    box-shadow: 5px 5px 5px 5px rgba(37, 34, 34, 0.2);
+  width: 50%;
+  padding: 5px;
+  background: #ecf1f4;
+  color: rgb(26, 2, 2);
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 5px 5px 5px 5px rgba(37, 34, 34, 0.2);
 }
 
 .botonOpciones2 {
-    width: 100px;
-    padding: 10px;
-    background: #ecf1f4;
-    color: rgba(26, 2, 2, 0.952);
-    border-radius: 10px;
-    cursor: pointer;
-    margin-top: 45px;
-    box-shadow: 5px 5px 5px 5px rgba(37, 34, 34, 0.19);
+  width: 100px;
+  padding: 10px;
+  background: #ecf1f4;
+  color: rgba(26, 2, 2, 0.952);
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 45px;
+  box-shadow: 5px 5px 5px 5px rgba(37, 34, 34, 0.19);
 }
 
 .botonCrear:hover {
-    background: #f3f5f7;
+  background: #f3f5f7;
 }
 
 .botonEnviar {
-    background-color: var(--color-primary);
-    color: white;
-    padding: 12px 24px;
-    margin: 1.5625rem auto;
-    border: none;
-    border-radius: 50px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: var(--color-primary);
+  color: white;
+  padding: 12px 24px;
+  margin: 1.5625rem auto;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .botonEnviar:hover {
-    background-color: var(--bg-button);
-    transform: scale(1.2);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  background-color: var(--bg-button);
+  transform: scale(1.2);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .reserva {
-    width: 150px;
-    height: 50px;
-    margin: 15px auto;
-    font-weight: bold;
-    box-shadow: 4px 3px 2px 1px rgba(0, 0, 0, 0.681);
-    background-color: var(--color-nav);
-    color: var(--bg);
+  width: 150px;
+  height: 50px;
+  margin: 15px auto;
+  font-weight: bold;
+  box-shadow: 4px 3px 2px 1px rgba(0, 0, 0, 0.681);
+  background-color: var(--color-nav);
+  color: var(--bg);
 }
 
 .reserva:hover {
-    animation: shake-horizontal 0.8s linear both
+  animation: shake-horizontal 0.8s linear both;
+}
+
+.diploma a img {
+  width: 2.1875rem;
+  height: 2.1875rem;
+}
+
+.diploma:hover a img {
+  transform: scale(1.5) rotate(45deg);
+}
+
+.perfil a img {
+  width: 2.1875rem;
+  height: 2.1875rem;
+}
+
+.perfil:hover a img {
+  transform: scale(1.5) rotate(45deg);
 }
 
 @keyframes shake-horizontal {
-    0%,
-    100% {
-        transform: translateX(0)
-    }
-    
-    10%,
-    30%,
-    50%,
-    70% {
-        transform: translateX(-10px)
-    }
+  0%,
+  100% {
+    transform: translateX(0);
+  }
 
-    20%,
-    40%,
-    60% {
-        transform: translateX(10px)
-    }
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateX(-10px);
+  }
 
-    80% {
-        transform: translateX(8px)
-    }
+  20%,
+  40%,
+  60% {
+    transform: translateX(10px);
+  }
 
-    90% {
-        transform: translateX(-8px)
-    }
+  80% {
+    transform: translateX(8px);
+  }
+
+  90% {
+    transform: translateX(-8px);
+  }
 }
